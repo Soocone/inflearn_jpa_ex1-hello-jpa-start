@@ -10,6 +10,7 @@ import java.util.Date;
 public class Member {
 
     @Id
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE) // db에 시퀀스 오브젝트 생성해줌(Integer는 10몇억이상은 안되니.. Long이 낫다)
     private Long id;
 
     @Column(name = "name", nullable = false) // DB 컬럼명, NN
